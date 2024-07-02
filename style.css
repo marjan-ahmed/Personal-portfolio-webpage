@@ -81,7 +81,7 @@
     /* Styling */
     border-radius: 50%;
     width: 19.5%;
-    box-shadow: 0px 0px 20px 2px rgb(255, 31, 68);
+    box-shadow: 0px 0px 20px 2px rgb(54, 184, 42);
   }
   
   h1,p{
@@ -89,19 +89,20 @@
     text-align: center; /* Center align text */
     z-index: 1; /* Ensure text is above the overlay */
     color: var(--main-white); /* Text color */
+    padding-top: 6vh;
   }
 
   p{
     color: var(--main-red);
     font-size: 20px;
-    padding-top: 25px;
+    padding-top: 18px;
     font-family: poppins;
     font-style: italic;
     color: rgb(175, 175, 175);
   }
 
  .auto-type{
-  font-size: 60px;
+  font-size: 55px;
   font-family: raleway;
   position: relative;
   top: 10px;
@@ -154,6 +155,11 @@
   
   .nav-list a:hover {
     background: var(--main-blue);
+    transition: 0.3s;
+  }
+  
+  .nav-list a:not(:hover){
+    transition: 0.2s;
   }
   
   .projects-section {
@@ -223,7 +229,6 @@
   }
   
   .btn-show-all {
-    margin-top: -30px;
     font-size: 19px;
     font-family: poppins;
     background: var(--main-gray);
@@ -266,8 +271,9 @@
   }
 
   #skills-sec{
+    margin-top: -70px;
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     background: #4d4d4d;
   }
 
@@ -280,19 +286,18 @@
 
   .skills-heading{
     color: var(--main-white);
-    padding-top: 50px;
+    padding-top: 70px;
     font-family: raleway;
     text-align: center;
   }
 
   .skills-icons1{
-    padding-top: 20px;
+    padding-top: 30px;
     display: block;
     width: 80vw;
   }
 
   .skills-icons2{
-    margin-top: -10vh;
     display: block;
     margin: -60px auto;
     width: 10vw;
