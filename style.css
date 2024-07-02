@@ -317,7 +317,7 @@
   @media (max-width: 460px) {
     /* Styles for devices with a width of 460px or less */
     body {
-        overflow-x: hidden;
+      overflow-x: hidden;
       font-size: 16px; /* Smaller font size for readability */
     }
   
