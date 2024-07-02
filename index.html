@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- META TAGS -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Marjan Ahmed">
+    <meta name="description" content="Hi, I am Marjan Ahmed. I am from Karachi, Pakistan. I am 15 years old. I am studing in Nasra School Malir, Pakistan" />
+    <meta name="author" content="Marjan Ahmed" />
+    <meta name="keywords" content="PERSONAL PORTFOLIO WEBSITE" />
+
+    <!-- FONT AWESOME -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+    <!-- Typed.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- TITLE -->
+
+    <title>Marjan Ahmed</title>
 </head>
 <body>
 
@@ -25,9 +47,24 @@
 
       <section id="welcome-section" class="welcome-section">
         <img class="my-pic" src="images/my_pic.png" alt="">
-        <h1>Hey! I am Marjan</h1>
+        <h1><span class="auto-type"></span></h1>
         <p>A Passionate Full Stack developer, Cloud Applied Generative AI Engineer <br> (in progress). Full Stack Developer</p>
       </section>
+
+      <script>
+        // Auto Typing Effect Script
+  
+        var typed = new Typed(".auto-type", {
+          strings: [
+            "Hey I am Marjan Ahmed  ",
+            "WELCOME!, TO MY OFFICIAL WEBSITE",
+          ],
+          typeSpeed: 90,
+          backSpeed: 50,
+          loop: true,
+        });
+
+        </script>
 
 
       <section id="projects" class="projects-section">
