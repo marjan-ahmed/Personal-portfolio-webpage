@@ -5,89 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio Webpage</title>
+    <title>Document</title>
 </head>
 <body>
-    
-    <nav id="navbar">
-        <ul class="upper-ul">
-            <li id="upper-li"><a href="#welcome-section">About</a></li>
-            <li id="upper-li"><a href="#projects">Work</a></li>
-            <li id="upper-li"><a href="#footer">Contact</a></li>
+
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#welcome-section">About</a>
+          </li>
+          <li>
+            <a href="#projects">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
+
+      <section id="welcome-section" class="welcome-section">
+        <img class="my-pic" src="images/my_pic.png" alt="">
+        <h1>Hey! I am Marjan</h1>
+        <p>A Passionate Full Stack developer, Cloud Applied Generative AI Engineer <br> (in progress). Full Stack Developer</p>
+      </section>
+
+
+      <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+  
+        <div class="projects-grid">
+          <a href="https://github.com/marjan-ahmed/Tribute-Page" target="_blank" class="project project-tile">
+            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Tribute Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+          <a href="https://github.com/marjan-ahmed/random-joke-generator" target="_blank" class="project project-tile">
+            <img class="project-image" src="images/project2.JPG" alt="project">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Random Joke Generator
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+          <a href="https://github.com/marjan-ahmed/Weather-app/" target="_blank" class="project project-tile">
+            <img class="project-image" src="images/project3.JPG" alt="project">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Weather App
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+          <a href="https://github.com/marjan-ahmed/Asphalt-Legends-webpage" target="_blank" class="project project-tile">
+            <img class="project-image" src="images/project4.JPG" alt="project">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Asphalt Legends 9 - Webpage
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+          <a href="https://github.com/marjan-ahmed/HacksPlanning-website" target="_blank" class="project project-tile">
+            <img class="project-image" src="images/project5.JPG" alt="project">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              HacksPlanning - Webpage
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+          <a href="https://github.com/marjan-ahmed/Pak-Voting-App" target="_blank" class="project project-tile">
+            <img class="project-image" src="images/project6.JPG" alt="project">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Pakistan Voting App
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+  
+        <a href="https://github.com/marjan-ahmed?tab=repositories" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i></a>
+      </section>
+
+
+      <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+          <h2>Let's work together...</h2>
+          <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://facebook.com/ahm.marjan" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a id="profile-link" href="https://github.com/marjan-ahmed" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://twitter.com/@m_marjanahmed" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="mailto:marjanahmed.dev@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+          <a href="tel:0-306-2806-717" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+            <i class="fa-regular fa-copyright"></i>2024 All right reserved. Made & Developted with ❤️ by Marjan Ahmed 
+        </p>
+      </footer>
     
-    <section id="welcome-section">
-    <div class="about" id="about">
-            <img class="my-pic" height="300" src="images/my_pic.png" alt="My Picture">
-            <h1 class="intro">Hey! I am Marjan</h1>
-            <p class="about-me">A Passionate Full Stack developer and Cloud Applied Generative AI Engineer <br>in progress. Full Stack Developer</p>
-    </div>
-    <div id="projects">
-        <h1 class="project-heading">These are some of my projects</h1>
-        <div id="project-img">
-            <div class="project-tile prj-1">
-            <a href="https://github.com/marjan-ahmed/Tribute-page"><img id="project" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt=""></a>
-            <pre class="pre" id="Tribute Page">Tribute Page</pre>
-        </div>
-        <div class="prj-2">
-            <a href="https://github.com/marjan-ahmed/weather-app"><img id="project" src="images/project2.JPG" alt=""></a>
-            <pre class="pre" id="Random Joke Generator">Random Joke Generator</pre>
-        </div>
-        <div class="prj-3">
-            <a href="https://github.com/marjan-ahmed/weather-app"><img id="project" src="images/project3.JPG" alt=""></a>
-            <pre class="pre" id="Weather App">Weather App</pre>
-        </div>
-            <div class="prj-4">
-            <img id="project" src="images/project4.JPG" alt="">
-            <pre class="pre" id="Asphalt Legends 9 - Webpage">Asphalt Legends 9 - Webpage</pre>
-        </div>
-        <div class="prj-5">
-            <img id="project" src="images/project5.JPG" alt="">
-            <pre class="pre" id="HaksPlanning - Webpage">HaksPlanning - Webpage</pre>
-        </div>
-        <div class="prj-6">
-            <img id="project" src="images/project6.JPG" alt="">
-            <pre class="pre" id="Pakistan Voting App">Pakistan Voting App</pre>
-        </div>
-        </div>
-        <button class="show-more">Show all</button>
-    </div>
-
-</section>
-<section id="footer">
-        <h1 class="work-tog">Let's work together...</h1>
-        <em>How do you take your coffee?</em>
-
-        <div class="social-links">
-            <ul id="social-ul">
-                <li><a id="profile-link" target="_blank" href="https://fb.com/ahm.marjan"><i class="fa-brands fa-square-facebook">Facebook</i></a></li>
-                <li><a id="profile-link" target="_blank" href="https://github.com/marjan-ahmed"><i class="fa-brands fa-github">GitHub</i></a></li>
-                <li><a id="profile-link" target="_blank" href="https://x.com/@m_marjanahmed"><i class="fa-brands fa-facebook">Twitter</i></a></li>
-                <li><a id="profile-link" target="_blank" href="mailto: marjanahmed.dev@gmail.com"><i class="fa-brands fa-at">Send a mail</i></a></li>
-                <li><a id="profile-link" target="_blank" href="tel: 03062806717"><i class="fa-solid fa-phone">Call me</i></a></li>
-            </ul>
-        </div>
-        <footer>
-            <h4 class="copyright">Made & Developted with ❤️ by Marjan Ahmed</h4>
-        </footer>
-</section>
 </body>
-
-<script>
- const buttons = document.querySelectorAll('.pre');
-
-
- buttons.forEach(button => {
-        const originalText = button.textContent; // Store original text content
-
-        button.addEventListener('mouseenter', function() {
-            button.textContent = `<${button.id} />`; // Change text content on hover
-        });
-
-        button.addEventListener('mouseleave', function() {
-            button.textContent = originalText; // Revert to original text content on mouse leave
-        });
-    });
-</script>
 </html>
