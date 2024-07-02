@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 
-    <!-- META TAGS -->
-
+  <!-- META TAGS -->
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +12,10 @@
     <meta name="description" content="Hi, I am Marjan Ahmed. I am from Karachi, Pakistan. I am 15 years old. I am studing in Nasra School Malir, Pakistan" />
     <meta name="author" content="Marjan Ahmed" />
     <meta name="keywords" content="PERSONAL PORTFOLIO WEBSITE" />
+
+    <!-- ICON -->
+
+    <link rel="icon" href="images/my_pic.png">
 
     <!-- FONT AWESOME -->
 
@@ -40,16 +44,25 @@
             <a href="#projects">Work</a>
           </li>
           <li>
+            <a href="#skills-sec">Skills</a>
+          </li>
+          <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
 
+      
       <section id="welcome-section" class="welcome-section">
+        <div class="overlay-container">
+          <video class="background-video" src="video/hacking.mp4" muted loop autoplay></video>
+          <div class="overlay"></div>
         <img class="my-pic" src="images/my_pic.png" alt="">
         <h1><span class="auto-type"></span></h1>
         <p>A Passionate Full Stack developer, Cloud Applied Generative AI Engineer <br> (in progress). Full Stack Developer</p>
+      </div>
       </section>
+    
 
       <script>
         // Auto Typing Effect Script
@@ -65,7 +78,6 @@
         });
 
         </script>
-
 
       <section id="projects" class="projects-section">
         <h2 class="projects-section-header">These are some of my projects</h2>
@@ -122,6 +134,18 @@
         </div>
   
         <a href="https://github.com/marjan-ahmed?tab=repositories" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i></a>
+      </section>
+
+      <section id="skills-sec">
+        <h2 style="text-align: center" class="skills-heading">Skills</h2>
+        <div class="skills">
+<p style="text-align: center">
+  <a href="https://skillicons.dev">
+    <img class="skills-icons1" src="https://skillicons.dev/icons?i=wordpress,vscode,html,css,js,ts,nodejs,nextjs,react,tailwind,pycharm,py,powershell,postgres,npm,mysql.linux" />
+    <img class="skills-icons2" src="https://skillicons.dev/icons?i=git,github" alt="">
+  </a>
+</p>
+</div>
       </section>
 
 
