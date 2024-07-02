@@ -1,0 +1,312 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root Variables */
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+/* Global Reset */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed; /* Fixed position */
+    top: 0; /* Fixed at the top */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: var(--main-red); /* Red background */
+    color: white; /* White text color */
+    z-index: 1000; /* Ensure it's on top */
+    padding: 10px 0; /* Padding for content */
+}
+
+.upper-ul {
+    margin-left: 72%; /* Adjusted as per your layout */
+}
+
+#upper-li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px;
+    font-size: 18px; /* Adjust font size */
+    font-weight: 500; /* Adjust font weight */
+    color: white;
+    margin-left: 15px;
+}
+
+#upper-li:hover {
+    background-color: #45567D; /* Darker background on hover */
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.about {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.my-pic {
+    margin-top: 20vh;
+    border-radius: 50%;
+    margin-left: 39vw;
+    box-shadow: 0px 0px 25px 2px var(--main-red);
+}
+
+.intro {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 55.68px;
+    color: var(--main-white);
+    margin-top: 20px;
+}
+
+.about-me {
+    text-align: center;
+    color: var(--main-white);
+    font-family: poppins;
+    margin-top: 15px;
+    padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+#projects {
+    width: 100%;
+    height: 227%;
+    background: var(--main-blue);
+    margin-top: -21px;
+}
+
+.project-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 38.97px;
+    text-align: center;
+    padding-top: 60px;
+    color: var(--main-white);
+}
+
+#project-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+#project {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.pre {
+    width: 400px;
+    height: 65px;
+    background: var(--main-gray);
+    color: var(--main-white);
+    text-align: center;
+    padding: 17px 0px;
+    font-size: 20px;
+    font-family: poppins;
+    margin-top: -1vh;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease, white 0.5s ease;
+    box-shadow: 0px 0px 5px 4px rgb(44, 44, 44);
+}
+
+.pre:hover {
+    color: rgb(255, 58, 107);
+}
+
+.pre:not(:hover) {
+    transition: 0.3s;
+}
+
+.show-more {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: poppins;
+    color: var(--main-white);
+    background: var(--main-gray);
+    box-shadow: 0px 0px 5px 4px rgb(44, 44, 44);
+    border: none;
+}
+
+.show-more:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: none;
+    border-radius: 3px;
+    background: var(--main-red);
+}
+
+.show-more:not(:hover) {
+    transition: 0.3s ease-in-out;
+}
+
+#footer {
+    width: 100%;
+    height: 100vh;
+    background: var(--main-gray);
+    margin-top: 224.6vh;
+}
+
+.work-tog {
+    font-size: 60px;
+    color: var(--main-white);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding-top: 20vh;
+    margin-bottom: 5px;
+}
+
+em {
+    padding-left: 40vw;
+    color: var(--main-white);
+    font-family: poppins;
+    font-weight: 200;
+    font-size: 18px;
+    padding-bottom: -30vh;
+}
+
+.social-links {
+    padding-top: 5px;
+    border-bottom: 3px solid var(--main-red);
+}
+
+#social-ul {
+    list-style-type: none;
+}
+
+#profile-link {
+    font-family: poppins;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 41vw;
+    color: var(--main-white);
+    border-bottom: 2px solid var(--main-blue);
+    margin-bottom: 20px;
+    transform: translateX(30px);
+}
+
+#profile-link:nth-of-type(5){
+    margin-bottom: 20px;
+}
+
+#profile-link:hover{
+    transform: translateX(50px);
+    transition: 0.3s;
+}
+
+#profile-link:not(:hover){
+    transition: 0.3s;
+}
+
+#projects {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 6px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: var(--main-white);
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .upper-ul {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .my-pic {
+        margin-left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro {
+        font-size: 2rem;
+    }
+
+    .about-me {
+        font-size: 1rem;
+    }
+
+    #project-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pre {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .show-more {
+        width: 50%;
+    }
+
+    em {
+        padding-left: 0;
+    }
+}
+
+/* Example of a Media Query */
+@media screen and (max-width: 768px) {
+    /* Adjust styles here for smaller screens */
+    .my-pic {
+        margin-left: 10vw; /* Example adjustment */
+    }
+
+    .project-heading {
+        font-size: 28px; /* Example adjustment */
+    }
+}
+

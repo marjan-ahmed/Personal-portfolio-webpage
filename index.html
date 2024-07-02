@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio Webpage</title>
+</head>
+<body>
+    
+    <nav id="navbar">
+        <ul class="upper-ul">
+            <li id="upper-li"><a href="#welcome-section">About</a></li>
+            <li id="upper-li"><a href="#projects">Work</a></li>
+            <li id="upper-li"><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="welcome-section">
+    <div class="about" id="about">
+            <img class="my-pic" height="300" src="images/my_pic.png" alt="My Picture">
+            <h1 class="intro">Hey! I am Marjan</h1>
+            <p class="about-me">A Passionate Full Stack developer and Cloud Applied Generative AI Engineer <br>in progress. Full Stack Developer</p>
+    </div>
+    <div id="projects">
+        <h1 class="project-heading">These are some of my projects</h1>
+        <div id="project-img">
+            <div class="project-tile prj-1">
+            <a href="https://github.com/marjan-ahmed/Tribute-page"><img id="project" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt=""></a>
+            <pre class="pre" id="Tribute Page">Tribute Page</pre>
+        </div>
+        <div class="prj-2">
+            <a href="https://github.com/marjan-ahmed/weather-app"><img id="project" src="images/project2.JPG" alt=""></a>
+            <pre class="pre" id="Random Joke Generator">Random Joke Generator</pre>
+        </div>
+        <div class="prj-3">
+            <a href="https://github.com/marjan-ahmed/weather-app"><img id="project" src="images/project3.JPG" alt=""></a>
+            <pre class="pre" id="Weather App">Weather App</pre>
+        </div>
+            <div class="prj-4">
+            <img id="project" src="images/project4.JPG" alt="">
+            <pre class="pre" id="Asphalt Legends 9 - Webpage">Asphalt Legends 9 - Webpage</pre>
+        </div>
+        <div class="prj-5">
+            <img id="project" src="images/project5.JPG" alt="">
+            <pre class="pre" id="HaksPlanning - Webpage">HaksPlanning - Webpage</pre>
+        </div>
+        <div class="prj-6">
+            <img id="project" src="images/project6.JPG" alt="">
+            <pre class="pre" id="Pakistan Voting App">Pakistan Voting App</pre>
+        </div>
+        </div>
+        <button class="show-more">Show all</button>
+    </div>
+
+</section>
+<section id="footer">
+        <h1 class="work-tog">Let's work together...</h1>
+        <em>How do you take your coffee?</em>
+
+        <div class="social-links">
+            <ul id="social-ul">
+                <li><a id="profile-link" target="_blank" href="https://fb.com/ahm.marjan"><i class="fa-brands fa-square-facebook">Facebook</i></a></li>
+                <li><a id="profile-link" target="_blank" href="https://github.com/marjan-ahmed"><i class="fa-brands fa-github">GitHub</i></a></li>
+                <li><a id="profile-link" target="_blank" href="https://x.com/@m_marjanahmed"><i class="fa-brands fa-facebook">Twitter</i></a></li>
+                <li><a id="profile-link" target="_blank" href="mailto: marjanahmed.dev@gmail.com"><i class="fa-brands fa-at">Send a mail</i></a></li>
+                <li><a id="profile-link" target="_blank" href="tel: 03062806717"><i class="fa-solid fa-phone">Call me</i></a></li>
+            </ul>
+        </div>
+        <footer>
+            <h4 class="copyright">Made & Developted with ❤️ by Marjan Ahmed</h4>
+        </footer>
+</section>
+</body>
+
+<script>
+ const buttons = document.querySelectorAll('.pre');
+
+
+ buttons.forEach(button => {
+        const originalText = button.textContent; // Store original text content
+
+        button.addEventListener('mouseenter', function() {
+            button.textContent = `<${button.id} />`; // Change text content on hover
+        });
+
+        button.addEventListener('mouseleave', function() {
+            button.textContent = originalText; // Revert to original text content on mouse leave
+        });
+    });
+</script>
+</html>
