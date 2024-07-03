@@ -164,10 +164,10 @@ a {
 
 .projects-section-header {
   line-height: 1.5;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   max-width: 640px;
-  margin: -60px auto 3rem;
+  margin: -30px auto 3rem;
   color: var(--main-white);
   border-bottom: 0.2rem solid var(--main-white);
 }
