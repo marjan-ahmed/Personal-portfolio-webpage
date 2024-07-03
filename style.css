@@ -425,13 +425,10 @@
       align-items: center;
       width: 170%;
       font-size: 70%;
-
     }
-
-    .contact-links{
-      padding-top: 13px;
-    }
+    
     .copyright{
       font-size: 14px;
+      text-align: center;
     }
   }
