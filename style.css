@@ -410,7 +410,8 @@
     }
 
     .welcome-section{
-      height: 127vh;
+      height: 120vh;
+      max-height: 127vh;
     }
 
     .my-pic{
