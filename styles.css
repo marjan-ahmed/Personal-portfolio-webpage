@@ -335,6 +335,8 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
+
   max-width: 980px;
   gap: 1rem;
   font-family: Poppins, sans-serif;
@@ -447,7 +449,7 @@ footer > p {
 
 @media (max-width: 460px) {
   .welcome-section {
-    height: 120vh;
+    height: 100vh;
     max-height: 127vh;
   }
 
