@@ -373,54 +373,51 @@ img {
 .fa-mobile-alt::before {
   content: "";
 }
-
 .btn {
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
     margin: 0.5rem;
     text-decoration: none;
     color: var(--main-white);
     padding: 0.7rem 1.3rem;
     border-radius: 2px;
     transition: background-color 0.3s ease;
+    width: auto; /* Ensures buttons adapt to content */
   }
   
   .btn:hover {
     background-color: var(--main-blue);
   }
-
-.contact-form {
+  
+  .contact-form {
     width: 100%;
     max-width: 600px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 0 1rem; /* Add padding to the sides */
   }
   
   .contact-form label {
     color: var(--main-white);
-    font-family: raleway;
+    font-family: Raleway, sans-serif;
     font-size: 1.4rem; /* Adjust font size as needed */
     margin-bottom: 0.5rem;
     display: block;
   }
   
-  .contact-form input[type="email"] {
+  .contact-form input[type="email"], 
+  .contact-form textarea {
     width: 90%;
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
     padding: 0.7rem;
     margin-bottom: 1rem;
     border: 2px solid var(--main-red);
     border-radius: 2px;
     background-color: transparent;
     color: var(--main-white);
-    font-size: 1rem; 
+    font-size: 1rem;
   }
-
-  textarea{
-    border: 2px solid var(--main-white);
-    padding-top: 20px;
-    text-indent: 20px;
-    font-size: 16px;
-    font-family: poppins;
-    background: rgb(87, 87, 87);
-    color: var(--main-white);
+  
+  .contact-form textarea {
+    min-height: 130px; /* Adjust minimum height for the textarea */
   }
   
   .contact-form button {
@@ -432,12 +429,15 @@ img {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1rem; /* Adjust font size as needed */
+    width: 100%; /* Button stretches to fill the form width */
+    max-width: 200px; /* Limit maximum width to maintain readability */
+    margin: 1rem auto 0; /* Center and add space above */
   }
   
   .contact-form button:hover {
     background-color: var(--main-blue);
   }
-
+  
   
 @media (max-width: 768px) {
     .contact-section {
