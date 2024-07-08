@@ -82,10 +82,20 @@ h1, h2 {
 .pic-div::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 60px;
   width: 25%;
-  height: 200%;
-  background: rgb(24, 189, 38);
+  height: 180%;
+  background: rgb(23, 167, 35);
   animation: motion 4s linear infinite;
+
+  transform-origin: middle;
+}
+
+.pic-div:hover::before{
+  animation: motion 2s linear infinite;
+  background-image: linear-gradient(rgb(5, 223, 23), rgb(5, 164, 238));
+  transform: rotate(60deg);
 }
 
 .pic-div::after{
@@ -96,11 +106,12 @@ h1, h2 {
     background-repeat: no-repeat;
     background-size: cover;
   border-radius: 50%;
+  
 }
 
 @keyframes motion {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 
