@@ -76,29 +76,26 @@ h1, h2 {
   margin: 10vh auto 2vh auto; /* Adjust margins */
   overflow: hidden;
   border-radius: 50%;
-  margin-top: 20vh;
-}
-
-.pic-div img {
-  display: block; /* Ensure image is a block element */
-  width: 100%; /* Ensure the image fills the container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%;
-  inline-size: 91%;
-  margin: 9px auto;
+  margin-top: 16vh;
 }
 
 .pic-div::before {
   content: "";
   position: absolute;
-  z-index: -1;
-  top: -50%;
-  left: 50%;
-  width: 100vw; /* Full width of the viewport */
-  height: 45vh; /* Adjust height as needed */
-  transform-origin: bottom left;
-  background: rgba(0, 255, 0, 0.7); /* Adjust background color */
+  width: 25%;
+  height: 200%;
+  background: rgb(24, 189, 38);
   animation: motion 4s linear infinite;
+}
+
+.pic-div::after{
+  content: "";
+  position: absolute;
+  inset: 8px;
+    background-image: url('images/my_pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  border-radius: 50%;
 }
 
 @keyframes motion {
