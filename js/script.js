@@ -25,5 +25,5 @@ var typed = new Typed(".auto-type", {
     loader.style.display = 'none';
     // Show content
     content.classList.add('loaded');
-  }, 2700); // Adjust the timeout duration as needed
+  }, 2000); // Adjust the timeout duration as needed
 });
