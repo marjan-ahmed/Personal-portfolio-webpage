@@ -140,7 +140,7 @@ h1, h2 {
   left: 60px;
   width: 25%;
   height: 180%;
-  background: rgb(23, 167, 35);
+  background: rgb(42, 214, 19);
   animation: motion 4s linear infinite;
 
   transform-origin: middle;
@@ -225,7 +225,7 @@ h1, .about-me-para {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  background: rgb(20, 151, 31);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 0px;
   z-index: 10;
 }
@@ -279,7 +279,7 @@ a {
   padding: 20px;
   padding-top: 35px;
   background-color: #9b9b9b;
-  box-shadow:  0 0 25px 20px rgba(20, 20, 20, 0.9);
+  box-shadow: 0 0 15px 20px rgba(20, 20, 20, 0.9);
   border: none;
   border-radius: 10px;
 }
@@ -364,9 +364,9 @@ a {
 @media (max-width: 480px) {
   .about-section {
     padding: 15vh 0; /* Adjust padding for mobile */
+    
   }
-
-  .container {
+    .container {
     padding-top: 20px;
   }
 

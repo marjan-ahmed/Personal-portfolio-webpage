@@ -25,5 +25,5 @@
     loader.style.display = 'none';
     // Show content
     content.classList.add('loaded');
-  }, 2700); // Adjust the timeout duration as needed
+  }, 1500); // Adjust the timeout duration as needed
 });
