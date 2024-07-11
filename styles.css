@@ -138,7 +138,7 @@ h1, h2 {
   position: absolute;
   top: 0;
   left: 60px;
-  width: 25%;
+  width: 45%;
   height: 180%;
   background: rgb(42, 214, 19);
   animation: motion 4s linear infinite;
@@ -148,7 +148,7 @@ h1, h2 {
 
 .pic-div:hover::before{
   animation: motion 2s linear infinite;
-  background-image: linear-gradient(rgb(5, 223, 23), rgb(5, 164, 238));
+  background-image: linear-gradient(rgb(19, 236, 37), rgb(5, 164, 238));
   transform: rotate(60deg);
 }
 
@@ -739,13 +739,14 @@ button {
 .btn {
   padding: 15px 25px;
   border: unset;
-  border-radius: 15px;
+  border-radius: 50px;
   color: #212121;
+  width: -40%;
   z-index: 1;
   background: #e8e8e8;
   position: relative;
-  font-weight: 1000;
-  font-size: 17px;
+  font-weight: 900;
+  font-size: 15px;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
   box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
   transition: all 250ms;
@@ -768,7 +769,7 @@ button {
   z-index: -1;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
   box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-  transition: all 250ms
+  transition:  250ms
  }
  
  .btn:hover {
