@@ -225,7 +225,7 @@ h1, .about-me-para {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(20, 151, 31);
+  background:  #10b935;;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 0px;
   z-index: 10;
 }
@@ -239,11 +239,17 @@ ul {
   margin-right: 2rem;
   font-family: Poppins, sans-serif;
   font-size: 1rem;
+  color: #000000;
 }
 
 a {
   text-decoration: none;
-  color: var(--main-white);
+  color: #000000;
+  font-weight: 400;
+}
+
+a:hover{
+  color: white;
 }
 
 .nav-list a {
