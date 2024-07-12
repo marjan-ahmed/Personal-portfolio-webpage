@@ -53,12 +53,12 @@ body {
 }
 
 .content {
-  display: none; /* Hide content initially */
+  display: none; 
   transition: 0.2s;
 }
 
 .content.loaded {
-  display: block; /* Show content when loaded */
+  display: block; 
   transition: 0.2s;
  
 }
@@ -124,10 +124,10 @@ h1, h2 {
 }
 .pic-div {
   position: relative;
-  width: 80%; /* Adjust width for smaller screens */
-  max-width: 300px; /* Example max-width to prevent it from getting too large */
-  height: auto; /* Adjust height as needed */
-  margin: 10vh auto 2vh auto; /* Adjust margins */
+  width: 80%; 
+  max-width: 300px; 
+  height: auto; 
+  margin: 10vh auto 2vh auto; 
   overflow: hidden;
   border-radius: 50%;
   margin-top: 16vh;
@@ -266,21 +266,21 @@ a:hover{
   transition: 0.2s;
 }
 
-/* ----------------ABOUT SECTION----------------------- */
 
-/* Base styles for .about-section */
+
+
 .about-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10vh 0; /* Adjusted for responsiveness */
+  padding: 10vh 0; 
   background-color: #1e1e1e;
 }
 
 .container {
   display: flex;
-  align-items: center; /* Center content */
-  max-width: 95%; /* Adjusted for responsiveness */
+  align-items: center; 
+  max-width: 95%; 
   width: 80%;
   padding: 20px;
   padding-top: 35px;
@@ -295,11 +295,11 @@ a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px; /* Add margin for spacing */
+  margin-bottom: 20px; 
 }
 
 .about-image img {
-  max-width: 100%; /* Adjusted for responsiveness */
+  max-width: 100%; 
   width: 70%;
   border-radius: 10px;
   border: 2px solid #6a1b9a;
@@ -308,7 +308,7 @@ a:hover{
 .about-content {
   flex: 2;
   padding-left: 20px;
-  text-align: left; /* Center text content */
+  text-align: left; 
 }
 
 .who-am-i {
@@ -317,26 +317,36 @@ a:hover{
   color: rgb(0, 0, 0);
   margin: 0;
 }
-
 .about-me {
-  font-size: 2em; /* Adjust for mobile */
+  font-size: 2em; 
   color: #6a1b9a;
   margin: 10px 0;
 }
 
 .about-description {
-  font-size: 0.8em;
-  font-family: jost;
-  color: rgb(0, 0, 0);
+  font-size: 0.8em; 
+  font-family: 'Jost', sans-serif; 
+  color: #000;
   line-height: 1.6;
 }
 
+
+@media (max-width: 767px) {
+  .about-me {
+    font-size: 1.5em; 
+  }
+
+  .about-description {
+    font-size: 0.7em; 
+    line-height: 1.4; 
+  }
+}
 .download-cv {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
-  font-size: 0.6em; /* Adjust for mobile */
+  font-size: 0.6em; 
   font-family: jost;
   font-weight: 600;
   color: #6a1b9a;
@@ -351,25 +361,25 @@ a:hover{
   color: #fff;
 }
 
-/* Media query for tablets */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
 
   .about-me {
-    font-size: 1.2em; /* Adjust font size for tablets */
+    font-size: 1.2em; 
   }
 
   .download-cv {
-    font-size: 0.7em; /* Adjust font size for tablets */
+    font-size: 0.7em; 
   }
 }
 
-/* Media query for mobile devices */
+
 @media (max-width: 480px) {
   .about-section {
-    padding: 15vh 0; /* Adjust padding for mobile */
+    padding: 15vh 0; 
     
   }
     .container {
@@ -377,16 +387,16 @@ a:hover{
   }
 
   .about-me {
-    font-size: 1em; /* Adjust font size for mobile */
+    font-size: 1em; 
   }
 
   .download-cv {
-    font-size: 0.6em; /* Adjust font size for mobile */
+    font-size: 0.6em; 
   }
 }
 
 
-/* ---------------END ABOUT SECTION---------------- */
+
 
 .projects-section {
   text-align: center;
@@ -416,7 +426,7 @@ a:hover{
 .project {
   background: var(--main-gray);
   border-radius: 2px;
-  overflow: hidden; /* Ensures no overflow content visible */
+  overflow: hidden; 
 }
 
 img {
@@ -508,11 +518,11 @@ img {
 
  
 .fa-chevron-right::before {
-  content: "";
+  content: 'Jost';
 }
 
 .fa, .far, .fas {
-  font-family: "Font Awesome 5 Free";
+  font-family: "";
 }
 
 .fa, .fas {
@@ -657,7 +667,7 @@ img {
 }
 
 .button::before {
-  content: "";
+  content: "Font Awesome 5 Free";
   position: absolute;
   width: 55px;
   height: 55px;
@@ -690,7 +700,7 @@ img {
   display: block;
 }
 
-.contact-form input[type="email"],
+.contact-form input[type=""],
 .contact-form textarea {
   width: 100%;
   font-family: Poppins, sans-serif;
@@ -730,7 +740,7 @@ img {
  }
  
  .btn::before {
-  content: "";
+  content: "email";
   position: absolute;
   top: 0;
   left: 0;
@@ -821,7 +831,7 @@ footer > p {
     font-size: 2.5rem;
   }
 
-  .contact-form input[type="email"] {
+  .contact-form input[type=""] {
     font-size: 0.9rem;
   }
 
