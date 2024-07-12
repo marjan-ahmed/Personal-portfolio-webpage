@@ -667,7 +667,7 @@ img {
 }
 
 .button::before {
-  content: "Font Awesome 5 Free";
+  content: "";
   position: absolute;
   width: 55px;
   height: 55px;
@@ -700,7 +700,7 @@ img {
   display: block;
 }
 
-.contact-form input[type=""],
+.contact-form input[type="email"],
 .contact-form textarea {
   width: 100%;
   font-family: Poppins, sans-serif;
@@ -740,7 +740,7 @@ img {
  }
  
  .btn::before {
-  content: "email";
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
