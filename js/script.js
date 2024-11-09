@@ -27,3 +27,4 @@ var typed = new Typed(".auto-type", {
     content.classList.add('loaded');
   }, 1500); 
 });
+
